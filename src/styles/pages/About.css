@@ -1,0 +1,9 @@
+.faq-accordions{
+    padding: 0 5rem;
+}
+
+@media screen and (max-width: 480px) {
+    .faq-accordions {
+        padding: 0 1rem;
+    }
+  }

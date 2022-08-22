@@ -1,0 +1,16 @@
+.footer-block{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    /* position: absolute; */
+    bottom: 0px;
+    /* height: 150px; */
+}
+
+.footer-copyrights{
+    color: #fff;
+}
