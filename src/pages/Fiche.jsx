@@ -22,7 +22,7 @@ const Fiche = () => {
                     return navigate("*");
                     }   
                 setData(logementPassed.state)
-                console.log(logementPassed.state)
+                // console.log(logementPassed.state)
                 
                     }, [logementPassed.state, navigate])
                 
