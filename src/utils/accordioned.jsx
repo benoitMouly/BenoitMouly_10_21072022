@@ -1,6 +1,6 @@
 const accordioned = (e) => {
     e.preventDefault()
-    console.log(e.target)
+    // console.log(e.target)
     let el = e.target
     el.classList.toggle("active");
     el.querySelector('.chevron').removeAttribute('bottom')

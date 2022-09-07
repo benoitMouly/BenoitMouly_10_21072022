@@ -16,11 +16,7 @@ const Fiche = () => {
             // console.log(logementPassed)
             const [,setData] = useState([]);
             let navigate = useNavigate()
-            // let coloredStar = '../assets/starcolored.svg';
-            // let greyStar = "../assets/star.svg";
             let stars = [];
-            // const { from } = logementPassed.state
-            // console.log(logementPassed.state.propsPassed.title)
             useEffect(() => {
                 if (!logementPassed.state){
                     return navigate("*");
@@ -41,7 +37,7 @@ const Fiche = () => {
                 }
 if(logementPassed.state){
     let hostname = logementPassed.state.propsPassed.host.name;
-    const hostnameCleaned = hostname.replace(/\s/g, '\n') //HimynameisFlavio
+    const hostnameCleaned = hostname.replace(/\s/g, '\n') // regex qui remplace les espaces par des retour à la ligne
     return (
         <div className="home-body fiche-body">
             <div className="home-content fiche-content">

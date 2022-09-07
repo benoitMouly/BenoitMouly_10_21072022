@@ -15,7 +15,7 @@ const App = () => {
       < Route path="/about" element={<About/>} />
       < Route path="/logement/:id" element={<Fiche />}/>
       {/* path='*' le * se dit ALL fonctionne si jamais l'url ne correspond à rien de déclaré au dessus
-      ça nous renvoi donc à la page d'accueil mais ça aurait pu être une page 404 */}
+      ça nous renvoi donc à une 404, mais ça aurait pu aussi nous renvoyer à l'accueil */}
       < Route path="*" element={<NotFound/>} />
     </Routes>
 

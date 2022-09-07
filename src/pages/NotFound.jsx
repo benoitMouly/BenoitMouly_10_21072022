@@ -14,7 +14,6 @@ const NotFound = () => {
                     <Logo/>
                     <Navigation/>
                 </div>
-            {/* <Card /> */}
             <div className="notfound-content">
             <div className='notfound'>
                    <span className='number'>404</span>

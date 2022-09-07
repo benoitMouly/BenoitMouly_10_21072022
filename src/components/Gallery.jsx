@@ -4,10 +4,11 @@ import BtnSlider from './BtnSlider';
 
 const Gallery = ({props}) => {
     const [data, setData] = useState([]);
-        // Le useEffect se joue lorsque le composant est monté
+         //Runs on the first render
+        
         useEffect(() => {
             setData(props.state.propsPassed.pictures)
-        }, [setData])
+        }, [props, data]) //And any time any dependency value changes
 
         const dataSlider = props.state.propsPassed.pictures
         const [slideIndex, setSlideIndex] = useState(1)
@@ -43,7 +44,7 @@ const Gallery = ({props}) => {
                         className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
                         >
                             <img key={index}
-                            src={obj} 
+                            src={obj} alt='' 
                             />
                         </div>
                     )
@@ -55,12 +56,6 @@ const Gallery = ({props}) => {
                 }
     
                 <div className="container-number">
-                    {/* {Array.from({length: 5}).map((item, index) => (
-                        <div key={index}
-                        onClick={() => moveDot(index + 1)}
-                        className={slideIndex === index + 1 ? "dot active" : "dot"}
-                        ></div>
-                    ))} */}
                     {slideIndex + '/' + dataSlider.length}
                 </div>
             </div>

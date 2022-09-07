@@ -4,11 +4,11 @@ import { logementList } from '../datas/logements';
 import '../styles/components/CardsGallery.css'
 
 const CardsGallery = () => {
-    const [data, setData] = useState([]);
+    const [data, setData] = useState([]); // data sera mis à jour par setData
 
-    // Le useEffect se joue lorsque le composant est monté
+    // Le useEffect se joue lorsque le composant est monté, et est vidé avec un array empty
     useEffect(() => {
-setData(logementList)
+setData(logementList) // data = logementList
 // console.log(logementList)
 
     }, [])
