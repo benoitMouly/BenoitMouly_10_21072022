@@ -1,0 +1,227 @@
+/* */ 
+
+.general-infos{
+    color: #ff6060;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+/*infos du logement */ 
+.general-infos_logement{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    line-height: auto;
+    justify-content: space-around;
+    
+}
+
+.general-infos_logement > * {
+    margin: 0;
+}
+
+.logement-title{
+    font-weight: 500;
+}
+.logement-tags{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    padding: 0;
+}
+
+.logement-tag{
+    list-style-type: none;
+    background-color: #ff6060;
+    border-radius: 10px;
+    color: #fff;
+    padding: 5px;
+    font-size: 0.7em;
+    max-width: 115px;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+/* infos du locataire */
+.general-infos_locataire{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+}
+
+.general-infos_locataire-vignette{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.location-nom{
+    text-align: left;
+    white-space: pre-line;
+    /* white-space: break-spaces; */
+}
+.location-image{
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50%;
+    max-width: 64px;
+    max-height: 64px;
+}
+
+.location-stars{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    column-gap: 1rem;
+}
+
+
+/*
+DEROULANTS
+*/ 
+
+.togglers{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    column-gap: 2rem;
+    min-height: 400px;
+    /* justify-content: space-between; */
+}
+
+.togglers_1, .togglers_2{
+    flex: 1 1 0px;
+}
+/*
+* ACCORDION LEARN MORE
+**/
+
+.accordion-bloc{
+    color: #fff;
+}
+
+.accordion {
+    border-radius: 10px;
+    background-color: #ff6060 !important;
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    max-width: 100%;
+    border: none !important;
+    text-align: left !important;
+    outline: none !important;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.btn-event{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    z-index: 59;
+    font-weight: 500;
+    font-size: 1rem;
+    /* justify-content: center; */
+    /* border-radius: 0 !important; */
+}
+
+.chevron{
+    font-size: 1.2rem;
+}
+
+.learn_more-accordion-icon{
+      display: block;
+      color: #fff  !important;
+      margin-right: 0.4rem;
+}
+
+
+  
+.active, .accordion:hover {
+    background-color: #112d3e;
+}
+  
+.panel {
+    padding: 0 15px;
+    /* margin-top: 15px; */
+    background-color: #f6f6f6;
+    color: #ff6060;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    /* padding: 15px; */
+    /* border-bottom: 1px solid #d4d4d4; */
+    /* margin-top: -5px; */
+    z-index: 2;
+    border-radius: 10px;
+    /* width: auto; */
+}
+
+.panel-list{
+    list-style-type: none;
+}
+
+.panel-txt{
+    padding: 15px;
+}
+
+
+
+
+@media screen and (max-width: 980px) {
+    .general-infos_locataire {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 577px) {
+    .btn-event {
+        font-size: 0.9rem;
+    }
+  }
+
+  @media screen and (max-width: 483px) {
+    .location-stars{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        list-style-type: none;
+        column-gap: 0.3rem;
+    }
+
+    .location__rate{
+        width: 20px;
+        height: 30px;
+    }
+
+    .location-image{
+        object-fit: cover;
+        overflow: hidden;
+        border-radius: 50%;
+        max-width: 40px;
+        max-height: 40px;
+    }
+
+    .togglers{
+
+        min-height: 150px;
+        /* justify-content: space-between; */
+    }
+  }
+
