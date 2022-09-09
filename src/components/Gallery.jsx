@@ -31,10 +31,6 @@ const Gallery = ({props}) => {
             }
         }
     
-        // const moveDot = index => {
-        //     setSlideIndex(index)
-        // }
-    
         return (
             <div className="container-slider">
                 {dataSlider.map((obj, index) => {

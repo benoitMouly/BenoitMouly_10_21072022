@@ -24,3 +24,9 @@
     padding: 0 0 2rem 2rem;
     color: #fff;
 }
+
+@media screen and (max-width: 768px) {
+    .card {
+      height: 250px;
+    }
+}

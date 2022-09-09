@@ -9,7 +9,7 @@ const Logo = () => {
         <div className='logo logo-header'>
             <NavLink to="/" className={(nav) =>(nav.isActive ? "nav-active" : "")}>
             {/* Les images importées depuis la balise IMG sont accessibles dans 'public' */}
-            <img src={logo} alt='logo react'/>
+            <img src={logo} alt='logo react' className='logo-react'/>
             </NavLink>
         </div>
     );

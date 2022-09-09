@@ -14,7 +14,6 @@ const Banner = ({props}) => {
     else{
          return (
         <div className='banner-decorate' style={{backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) , url(${bannerAbout})`}}>
-                <h2>{props}</h2>
         </div>
     );
     }

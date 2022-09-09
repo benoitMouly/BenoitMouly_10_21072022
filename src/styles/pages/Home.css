@@ -4,19 +4,29 @@
 }
 
 .home-content{
-    padding: 0rem 2rem 0rem 2rem;
+    padding: 0rem 1rem 0rem 1rem;
     min-height: 875px;
 }
 .header{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem;
 }
 
-@media screen and (max-width: 423px) {
+
+
+@media screen and (max-width: 496px) {
     .header {
-        justify-content: center;
+        justify-content: space-between;
+    }
+
+    .logo-react{
+        max-width: 100px;
+    }
+
+    .navigation-list > a > li{
+        font-size: 1rem;
     }
   }
