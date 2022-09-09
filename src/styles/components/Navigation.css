@@ -22,3 +22,12 @@
 .nav-active{
     text-decoration: underline !important;
 }
+
+@media screen and (max-width: 497px) {
+    .navigation-list > a > li{
+        list-style-type: none;
+        font-weight: 500;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+}
