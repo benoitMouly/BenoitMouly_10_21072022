@@ -13,7 +13,7 @@ const Banner = ({props}) => {
 }
     else{
          return (
-        <div className='banner-decorate' style={{backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) , url(${bannerAbout})`}}>
+        <div className='banner-decorate banner-about' style={{backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) , url(${bannerAbout})`}}>
         </div>
     );
     }
